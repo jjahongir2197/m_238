@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>To-Do List</h2>
+
+<form method="POST">
+    <input type="text" name="task" placeholder="Yangi task">
+    <button type="submit">Qo‘shish</button>
+</form>
+
+<ul>
+    {% for t in tasks %}
+        <li>{{ t }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
